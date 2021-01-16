@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     
-</body>
+    <title>"Soft, Furry and Useless"</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+            <img src="./imgs/logo.svg" alt="Cat logo" />
+            <!-- <img src="./imgs/cat-face-outline 1.svg" alt="logo" /> -->
+           <!--  <h4>Cat</h4> -->
+        </div>
+        <ul class="nav-list">
+          <li class="nav-link">
+            <!-- a tags (anchor tags) are used to link either to an external website or our own -->
+            <a href="#about">Features</a>
+          </li>
+          <li class="nav-link">
+            <a href="#features">Plans</a>
+          </li>
+          <li class="nav-link">
+            <a href="#uses">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#buy now">Buy now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="jumbotron-text">
+          <h1>"Soft, Furry and Useless"</h1>
+          <p>Endless hours of high quality entertainment</p>
+        </div>
+        <!-- <div class="cat">
+            <img src="./imgs/cat.png" alt="Cat image" width="700"/>
+        </div> -->
+      </div>
+        <!-- </div>
+        <button>Join Now</button>
+      </div> -->
+    </header>
+
+    <section id="features">
+      <div>
+        <h2>Different colors and shapes</h2>
+        <p>
+          For each taste
+        </p>
+    
+      </div>
+
+    
+      <!-- <div>
+        <h2>Automatic process</h2>
+        <p>
+          Tired of checking who is missing by counting the number of people online? V-Room lets you
+          create an automatic presence sheet that fills itself and is downloadable. Set delay timers
+          and exceptions and we'll take care of the rest.
+        </p>
+        <img src="./imgs/img2.jpg" alt="Computer screen" />
+      </div>
+      <div>
+        <h2>Make lectures interactive again</h2>
+        <p>
+          Not only can you record all of your classes for future access, you can take notes,
+          bookmark specific parts and index your whole lecture letting your students know exactly
+          what they are watching.
+        </p>
+        <img src="./imgs/img3.jpg" alt="Tablet computer with book open" />
+      </div> -->
+    </section>
+
+    <section id="plans">
+      <div class="card">
+        <h2>Free Plan</h2>
+        <ol>
+          <li>Unlimited 2 hour calls</li>
+          <li>30 people per call</li>
+          <li>1 hour of recordings per day</li>
+        </ol>
+        <button>Free</button>
+      </div>
+      <!-- hr stands for horizontal ruler, it creates a line in our webpage. It's a self closing tag -->
+      <hr />
+      <div class="card">
+        <h2>Base Plan</h2>
+        <ol>
+          <li>Unlimited call time</li>
+          <li>100 people per call</li>
+          <li>8 hour of recordings per day</li>
+          <li>Multiple host and co-host spots</li>
+        </ol>
+        <button>50$ p/month</button>
+      </div>
+      <hr />
+      <div class="card">
+        <h2>Premium Plan</h2>
+        <ol>
+          <li>Unlimited call time</li>
+          <li>500 people per call</li>
+          <li>Unlimited recordings</li>
+          <li>Multiple host and co-host spots</li>
+          <li>Class specific dashboards</li>
+        </ol>
+        <button>100$ p/month</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>Our mission</h3>
+      <p>
+        At V-room we want to give everyone the possibility to teach and learn without restraints.
+        Our cutting edge server technology allows us to deal with a high traffic demand without
+        compromising any quality. We are constantly trying to improve our product, making it more
+        accessible and secure for our users.
+      </p>
+      <h4>Keep up to date with the newest developments!</h4>
+      <form>
+        <input name="email" type="email" placeholder="Enter your email adress" required />
+        <input type="submit" value="Count me in!" />
+        <!-- <button>Count me in!</button> -->
+      </form>
+    </section>
+
+    <footer>
+      <span>Copyright 2020 | V-Room Industries</span>
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Work with us</a></li>
+        <li><a href="#"></a>Contacts</li>
+      </ul>
+    </footer>
+  </body>
 </html>

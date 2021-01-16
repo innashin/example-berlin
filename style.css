@@ -1,0 +1,290 @@
+/* Style Reset & variables */
+:root {
+    --dark-color: #282e34;
+    --light-color: #f4f4f4;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Rubik;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-weight: 400;
+  }
+  /* Header */
+
+  h2 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
+ /*  header {
+    background: linear-gradient(#A39C8B, #C4BEB5);
+  } */
+  
+  /* navbar */
+  header {
+    background-image: url(./imgs/Frame\ 2.png);
+    background-size: cover;
+    height: 700px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    display: flex;
+    width: 400px;
+    margin-right: 50px;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  
+  /* float right pushes the ul (nav-list) to the right of the screen */
+  /* .nav-list {
+    float: right;
+  } */
+  /* display inline-block turns the elements into inline elements, so they don't occupy the whole width of the screen */
+  /* nav * {
+    color: #edf0f1;
+    display: inline-block;
+  } */
+  
+  .nav-link a {
+    color: #edf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: rubik;
+  
+  }
+  
+  .logo {
+  /*   display: flex;
+    align-items: center; */
+ /*    justify-content: space-between; */
+ 
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  
+  /* jumbotron */
+  
+  .jumbotron {
+    width: 100%;
+    height: 600px;
+    min-height: 50%;
+    
+/*     background-image: url(./imgs/img1.jpg); */
+/*     background-size: cover;
+    background-repeat: no-repeat; */
+ 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .jumbotron-text {
+    font-weight: 300;
+    top: 150px;
+    width: 100vw;
+  }
+  
+  .jumbotron-text p {
+    margin-top: 10px;
+  }
+  .jumbotron-text h1 {
+    margin-bottom: 10px;
+  }
+
+
+
+  /* button {
+    background-color: #0069d9;
+    color: #dddddd;
+    border: 2px solid #0069d9;
+    border-radius: 10px;
+    cursor: pointer;
+  } */
+  
+ /*  .jumbotron button {
+    width: 200px;
+    height: 50px;
+    top: 300px;
+  } */
+  
+  /* Features Section */
+  
+  #features {
+    padding-top: 50px;
+  
+    color: #4B4B4B;
+    text-align: center;
+    background-image: url(./imgs/Frame\ 1.png);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+
+
+/*     display: flex; */
+/*     flex-direction: column;
+    align-items: center; */
+  }
+  
+  #features div {
+
+
+    text-align: center;
+
+
+
+/*     display: flex; */
+/*     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+  }
+  
+  #features p {
+   margin: 0 auto;
+   max-width: 50%;
+    font-weight: 300;
+  }
+  
+  #features h2 {
+    margin-bottom: 10px;
+ 
+    width: 100%;
+  }
+  
+ /*  #features img {
+    max-width: 40%;
+  } */
+  
+  /* Plans Section */
+  
+  #plans {
+    background-color: var(--dark-color);
+    color: #ddd;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    width: 300px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  
+  .card ol {
+    margin: 30px 0;
+    text-align: left;
+    list-style: square;
+  }
+  
+  hr {
+    max-width: 50%;
+    border-color: var(--light-color);
+  }
+  
+  /* About */
+  
+  #about {
+    background-color: var(--light-color);
+    color: #666;
+    margin: 50px 10%;
+  }
+  
+  form {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-email {
+    width: 70%;
+    height: 28px;
+  }
+  
+  .form-input {
+    cursor: pointer;
+    background-color: #0069d9;
+    color: #ddd;
+    border: 2px solid #0069d9;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: var(--dark-color);
+    color: #666;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  
+  footer a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  /* This media query just turns the page back to a column-based design once the screen gets smaller */
+  
+  @media screen and (max-width: 800px) {
+    #features div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #features h2 {
+      width: auto;
+    }
+  
+    #plans hr {
+      width: 50%;
+    }
+  
+    #plans {
+      flex-direction: column;
+    }
+  
+    #about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      flex-direction: column;
+      align-items: center;
+      height: 70px;
+    }
+  }
+  
