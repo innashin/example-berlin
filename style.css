@@ -142,7 +142,7 @@
     text-align: center;
     background-image: url(./imgs/Frame\ 1.png);
     background-size: cover;
-    height: 800px;
+    height: 780px;
     width: 100%;
 
 
@@ -206,12 +206,17 @@
    }
   
   #plans {
-    background-color: var(--dark-color);
-    color: #ddd;
+    background-color: #FFFDF6);
+    color: #776F5A;
     display: flex;
     justify-content: space-evenly;
   }
   
+
+  #plans h2 {
+    text-align: center;
+  }
+
   .card {
     width: 300px;
     text-align: center;
@@ -232,13 +237,13 @@
   
   /* About */
   
-  #about {
+  /* #about {
     background-color: var(--light-color);
     color: #666;
     margin: 50px 10%;
-  }
+  } */
   
-  form {
+  /* form {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -247,8 +252,8 @@
   .form-email {
     width: 70%;
     height: 28px;
-  }
-  
+  } */
+/*   
   .form-input {
     cursor: pointer;
     background-color: #0069d9;
@@ -257,7 +262,7 @@
     border-radius: 5px;
     padding: 5px 10px;
   }
-  
+   */
   /* Footer */
   
   footer {
@@ -296,6 +301,11 @@
   
     #plans {
       flex-direction: column;
+      text-align: center;
+    }
+
+    #plans p {
+      text-align: center;
     }
   
     #about {
