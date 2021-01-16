@@ -150,6 +150,8 @@
 /*     flex-direction: column;
     align-items: center; */
   }
+
+  
   
   #features div {
 
@@ -181,6 +183,27 @@
   } */
   
   /* Plans Section */
+  #uses {
+    padding-top: 50px;color: #776F5A;
+    text-align: center;
+    background-image: url(./imgs/Frame\ 3.png);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+
+  }
+
+  #uses p {
+    margin: 0 auto;
+    max-width: 40%;
+     font-weight: 300;
+   }
+   
+   #uses h2 {
+     margin-bottom: 10px;
+  
+     width: 100%;
+   }
   
   #plans {
     background-color: var(--dark-color);
